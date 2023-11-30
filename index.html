@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Times</title>
+    <link rel="icon" type="image/x-icon" href="/assets/imges/favicon.ico">
+    <!-- Bootstrap File Css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- Main File Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="my-app">
+        <section>
+            <div class="container">
+                <!-- Start Header -->
+                <select name="city" id="loc" class="select">
+                </select>
+                <h4 class="date" id="date"></h4>
+                <!-- End Header -->
+                <!-- start Card -->
+                <div class="cards">
+                    <div class="card Fajr">
+                        <h3>Fajr<h3>
+                        <span id="fajr-time"></span>
+                    </div>
+                    <div class="card">
+                        <h3>Sunrise<h3>
+                        <span id="sunrise-time"></span>
+                    </div>
+                    <div class="card">
+                        <h3>Dhuhr<h3>
+                        <span id="dhuhr-time"></span>
+                    </div>
+                    <div class="card">
+                        <h3>Asr<h3>
+                        <span id="asr-time"></span>
+                    </div>
+                    <div class="card">
+                        <h3>Maghrib<h3>
+                        <span id="maghrib-time"></span>
+                    </div>
+                    <div class="card">
+                        <h3>Isha<h3>
+                        <span id="isha-time"></span>
+                    </div>
+                </div>
+                <!-- End Card -->
+                <div class="title">
+                    <h1 class="location" id="h1"></h1>
+                    <h2 class="time"></h2>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Bootstrap File JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Main File JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

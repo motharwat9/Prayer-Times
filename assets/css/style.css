@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.my-app {
+    background-image: url(../imges/download.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+@media (min-width: 992px){
+    section{
+        height: 100vh;
+    }
+}
+
+section .container .title {
+    display: flex;
+    padding: 8px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media(max-width:992px){
+    section .container .title {
+        flex-direction: column;
+    }
+}
+section .container .title .location {
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: 1px solid white;
+    color: white;
+}
+section .container .title .time {
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: 1px solid white; 
+    color: white;
+}
+section .container .date {
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-bottom: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+section .container select {
+    margin-top: 50px;
+    background-color: transparent;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: black;
+}
+
+section .container .cards {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+    gap: 10px;
+    text-align: center;
+    height: 50vh;
+    align-items: center;
+    margin-bottom: 100px;
+}
+section .container .cards .card {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+
